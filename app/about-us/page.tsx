@@ -1,7 +1,11 @@
+export const metadata = {
+  title: "AboutUs",
+};
+
 export default function AboutUs() {
-    return (
-        <div>
-            <h1>About Us!</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>About Us!</h1>
+    </div>
+  );
 }
