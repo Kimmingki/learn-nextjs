@@ -1,4 +1,4 @@
-export default function AboutUsLayout({
+export default function SalesLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -6,7 +6,7 @@ export default function AboutUsLayout({
   return (
     <div>
       {children}
-      &copy; Next JS is great!
+      $$$$$$$$$
     </div>
   );
 }

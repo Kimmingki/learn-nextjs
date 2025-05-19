@@ -1,3 +1,3 @@
-export default function Page() {
-    return <h1>Sales Jobs</h1>;
+export default function Sales() {
+  return <h1>Sales Jobs</h1>;
 }
