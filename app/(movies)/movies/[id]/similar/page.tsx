@@ -1,6 +1,5 @@
-import { API_URL } from "../../../../../lib/config";
-
 async function getSimilarMovie(id: string) {
+    const API_URL = process.env.API_URL;
     const response = await fetch(`${API_URL}/${id}/similar`);
     return response.json();
 }

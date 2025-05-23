@@ -1,5 +1,4 @@
-import Movie from "../components/movie";
-import { API_URL } from "../lib/config";
+import Movie from "../../components/movie";
 import styles from "../../styles/home.module.css";
 
 export const metadata = {
@@ -8,6 +7,7 @@ export const metadata = {
 
 async function getMovies() {
     // await new Promise((resolve) => setTimeout(resolve, 1000));
+    const API_URL = process.env.API_URL;
     return fetch(API_URL).then((response) => response.json());
 
     // const response = await fetch(API_URL);

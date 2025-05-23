@@ -1,9 +1,9 @@
 import { Suspense } from "react";
 import MovieCredit from "../../../../../components/movie-credit";
 import styles from "../../../../../styles/movie-credit.module.css";
-import { API_URL } from "../../../../../lib/config";
 
 async function getMovieCredits(id: string) {
+    const API_URL = process.env.API_URL;
     const response = await fetch(`${API_URL}/${id}/credits`);
     return response.json();
 }
