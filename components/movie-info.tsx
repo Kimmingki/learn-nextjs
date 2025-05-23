@@ -22,9 +22,8 @@ export default async function MovieInfo({ id }: { id: string }) {
                 <a href={movieInfo.homepage} target={"_blank"}>
                     Homepage &rarr;
                 </a>
-                <a href={`${id}/credits`}>Credit &rarr;</a>
-                <a href={`${id}/providers`}>Providers &rarr;</a>
-                <a href={`${id}/similar`}>Similar &rarr;</a>
+                <a href={`${id}/credits`}>🧔‍♂️ Credit &rarr;</a>
+                <a href={`${id}/similar`}>👯‍♂️ Similar &rarr;</a>
             </div>
         </div>
     );
