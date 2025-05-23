@@ -1,3 +1,5 @@
-export default function Loading() {
-    return <h2>Loading a movie :id</h2>;
+import LoadingSpinner from "../../../../components/loadingSpinner";
+
+export default function LoadingMovieDetail() {
+    return <LoadingSpinner />;
 }
