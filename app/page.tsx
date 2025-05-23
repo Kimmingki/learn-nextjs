@@ -1,5 +1,5 @@
-import Movie from "../../components/movie";
-import { API_URL } from "../../lib/config";
+import Movie from "../components/movie";
+import { API_URL } from "../lib/config";
 import styles from "../../styles/home.module.css";
 
 export const metadata = {
