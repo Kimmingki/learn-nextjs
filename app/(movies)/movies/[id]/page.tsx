@@ -3,11 +3,10 @@ import MovieInfo, { getMovie } from "../../../../components/movie-info";
 import MovieVideos from "../../../../components/movie-videos";
 
 interface IParams {
-    params: { id: string };
+    params: Promise<{ id: string }>;
 }
 
-export async function generateMetadata(props: IParams) {
-    const { params } = props;
+export async function generateMetadata({ params }: IParams) {
     const { id } = await params;
     const movie = await getMovie(id);
     return {
@@ -15,8 +14,7 @@ export async function generateMetadata(props: IParams) {
     };
 }
 
-export default async function MovieDetail(props: IParams) {
-    const { params } = props;
+export default async function MovieDetail({ params }: IParams) {
     const { id } = await params;
     return (
         <div>
